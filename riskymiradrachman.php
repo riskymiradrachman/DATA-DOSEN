@@ -68,7 +68,7 @@
             <td><?=$data[4] ?></td>
             <td><?=$data[5] ?></td>
             <td>
-                <a href="index1.php?id=<?=$data[0]?>">Delete</a>
+                <a href="riskymiradrachman.php?id=<?=$data[0]?>">Delete</a>
             </td>
         </tr>
         <?php
@@ -86,7 +86,7 @@
         $cekInput = mysqli_query($koneksi, $sqlInput);
         if($cekInput){
             // echo "Datanya udah masuk gan";
-            echo "<script> window.location = 'index1.php' </script>";
+            echo "<script> window.location = 'riskymiradrachman.php' </script>";
         }else{
             echo "Aduh.. Gagal masuk datanya gan";
         }
@@ -99,9 +99,9 @@
 
         if($cekDelete){
             // echo "Datanya udah masuk gan";
-            echo "<script> window.location = 'index1.php' </script>";
+            echo "<script> window.location = 'riskymiradrachman.php' </script>";
         }else{
-            echo "Aduh.. Gagal ngehapus datanya gan";
+            echo "maaf gagal menghapus";
         }
     }
 ?>
